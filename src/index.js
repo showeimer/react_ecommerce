@@ -1,20 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/index.css';
-import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
+// REACT ROUTER
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
+// COMPONENTS
 import BaseLayout from './components/BaseLayout';
-import Home from './components/Home';
+import App from './components/App';
+import StrategyGames from './components/StrategyGames';
+import CardGames from './components/CardGames';
+import KidsGames from './components/KidsGames';
 
 ReactDOM.render(
 
   <BrowserRouter>
     <BaseLayout>
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={App} />
+        <Route path="/strategy" component={StrategyGames} />
+        <Route path="/card" component={CardGames} />
+        <Route path="/kids" component={KidsGames} />
       </Switch>
     </BaseLayout>
   </BrowserRouter>
