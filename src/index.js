@@ -17,8 +17,8 @@ ReactDOM.render(
 
   <BrowserRouter>
     <Switch>
-      <Route exact path="/" component={App} />
       <BaseLayout>
+        <Route exact path="/" component={App} />
         <Route path="/strategy" component={StrategyGames} />
         <Route path="/card" component={CardGames} />
         <Route path="/kids" component={KidsGames} />

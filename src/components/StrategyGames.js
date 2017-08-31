@@ -37,7 +37,7 @@ class StrategyGames extends Component {
           <h2>Strategy Games</h2>
           <h2>Sub-Banner</h2>
         </div>
-        <h3>Featured Products</h3>
+        <h3 className="productsBanner">Featured Products</h3>
         {strategy}
       </div>
     )

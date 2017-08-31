@@ -6,14 +6,28 @@ a {
   text-decoration: none;
   color: white; }
 
-.nav-desktop {
+.nav-mobile {
   display: none; }
+
+.nav-mobile-display {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  float: left; }
+  .nav-mobile-display a {
+    border: 1px solid white;
+    margin-bottom: 1%;
+    background-color: black;
+    color: white;
+    padding: 15px 25px; }
 
 header {
   position: absolute;
   top: 10px;
   right: 10px; }
   header svg {
+    width: 30px;
+    height: auto;
     fill: gold;
     cursor: pointer; }
 
@@ -98,6 +112,10 @@ header {
     color: white;
     margin: 0; }
 
+.productsBanner {
+  text-align: center;
+  display: block; }
+
 .gameItem {
   border: 1px solid black;
   padding: 20px 20px; }
@@ -111,12 +129,15 @@ header {
     cursor: pointer; }
 
 @media (min-width: 568px) {
-  .nav-desktop {
+  .nav-mobile {
     display: block; }
+    .nav-mobile a:not(:last-child) {
+      margin-right: 30px; }
+
+  .nav-mobile a {
+    background-color: none; }
 
   header svg {
-    display: none; }
-  header a:not(:last-child) {
-    margin-right: 30px; } }
+    display: none; } }
 
 /*# sourceMappingURL=app.css.map */
