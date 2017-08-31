@@ -16,14 +16,15 @@ import KidsGames from './components/KidsGames';
 ReactDOM.render(
 
   <BrowserRouter>
-    <BaseLayout>
-      <Switch>
-        <Route exact path="/" component={App} />
+    <Switch>
+      <Route exact path="/" component={App} />
+      <BaseLayout>
         <Route path="/strategy" component={StrategyGames} />
         <Route path="/card" component={CardGames} />
         <Route path="/kids" component={KidsGames} />
-      </Switch>
-    </BaseLayout>
+      </BaseLayout>
+    </Switch>
+
   </BrowserRouter>
 
   , document.getElementById('root'));

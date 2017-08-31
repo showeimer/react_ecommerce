@@ -33,7 +33,11 @@ class KidsGames extends Component {
 
     return (
       <div>
-        Kids Games Page
+        <div className="kidBanner">
+          <h2>Kids Games</h2>
+          <h2>Sub-Banner</h2>
+        </div>
+        <h3>Featured Products</h3>
         {kids}
       </div>
     )
