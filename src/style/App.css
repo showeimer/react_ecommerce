@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Graduate");
+@import url("https://fonts.googleapis.com/css?family=Graduate|Raleway|Roboto");
 *:focus {
   outline: none; }
 
@@ -6,59 +6,31 @@ a {
   text-decoration: none;
   color: white; }
 
-.nav-mobile {
+.nav {
   display: none; }
 
 .nav-mobile-display {
-  display: block;
   display: flex;
   flex-direction: column;
   float: left; }
   .nav-mobile-display a {
-    border: 1px solid white;
-    margin-bottom: 1%;
-    background-color: black;
-    color: white;
-    padding: 15px 25px; }
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 10px 25px 10px 15px;
+    font-family: "Raleway", sans-serif; }
+    .nav-mobile-display a:first-child {
+      margin-top: 3.5%; }
 
 header {
   position: absolute;
-  top: 10px;
-  right: 10px; }
+  top: 15px;
+  right: 20px; }
   header svg {
     width: 30px;
     height: auto;
-    fill: gold;
+    fill: red;
     cursor: pointer; }
-
-.home {
-  background: url("../images/gotbackground.jpg");
-  background-position: 47% 70%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 100vh; }
-  .home h1 {
-    margin: 0;
-    font-family: 'Graduate',sans-serif;
-    font-size: 2.75rem;
-    color: white;
-    text-shadow: .5px .5px black; }
-    .home h1:not(:first-child) {
-      border-top: 4px solid white;
-      font-size: 2rem; }
-  .home svg {
-    width: 30px;
-    height: auto;
-    float: right;
-    margin-top: 10px;
-    margin-right: 10px;
-    fill: gold;
-    cursor: pointer; }
-    .home svg::after {
-      content: "";
-      display: block;
-      clear: both; }
 
 .banner {
   display: flex;
@@ -67,11 +39,29 @@ header {
   align-items: center;
   width: 100%;
   height: 100vh; }
+  .banner h1 {
+    margin: 0;
+    font-family: "Graduate", sans-serif;
+    font-size: 2.75rem;
+    color: white;
+    text-shadow: 0.5px 0.5px black; }
+    .banner h1:not(:first-child) {
+      border-top: 4px solid white;
+      font-size: 2rem; }
+
+.home {
+  background: url("../images/gotbackground.jpg");
+  background-position: 47% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100vh; }
 
 .playButton {
   text-decoration: none;
-  color: gold;
-  border: 1px solid gold;
+  background-color: red;
+  color: white;
+  font-family: "Raleway", sans-serif;
   padding: 10px 12px;
   margin-top: 2.5%;
   box-shadow: 1px 1px black; }
@@ -80,6 +70,10 @@ header {
     color: white;
     transition: .35s; }
 
+.productsBanner {
+  font-family: 'Roboto';
+  text-transform: uppercase; }
+
 .strategyBanner {
   margin: 0;
   background-image: url("../images/strategy4.jpg");
@@ -87,14 +81,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .strategyBanner h2 {
-    color: white;
-    margin: 0; }
+  height: 100vh; }
 
 .cardBanner {
   margin: 0;
@@ -108,36 +95,66 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .cardBanner h2 {
-    color: white;
-    margin: 0; }
+
+.kidBanner {
+  margin: 0;
+  background-image: url("../images/kidbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .productsBanner {
   text-align: center;
-  display: block; }
+  display: block;
+  font-size: 1.5rem; }
 
 .gameItem {
   border: 1px solid black;
-  padding: 20px 20px; }
-  .gameItem img {
-    float: left; }
-    .gameItem img::after {
-      content: "";
-      display: block;
-      clear: both; }
+  padding: 20px 30px; }
+  .gameItem .gameContent {
+    display: flex;
+    flex-direction: row; }
+    .gameItem .gameContent img {
+      margin-right: 5%;
+      margin-bottom: 5%; }
   .gameItem details {
     cursor: pointer; }
 
+.gameInfo h2 {
+  font-family: 'Roboto'; }
+
+.about {
+  padding: 10% 10%; }
+
 @media (min-width: 568px) {
-  .nav-mobile {
+  .nav {
     display: block; }
-    .nav-mobile a:not(:last-child) {
+    .nav a:not(:last-child) {
       margin-right: 30px; }
 
-  .nav-mobile a {
-    background-color: none; }
+  .nav a {
+    font-family: "Raleway", sans-serif;
+    text-shadow: 0.5px 0.5px black; }
+    .nav a:hover {
+      border-bottom: .5px solid white;
+      padding-bottom: 2.5px; }
 
   header svg {
     display: none; } }
+@media (min-width: 800px) {
+  .products {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around; }
+
+  .gameItem {
+    box-sizing: border-box;
+    width: 49%;
+    margin-bottom: 2.5%; } }
 
 /*# sourceMappingURL=app.css.map */
