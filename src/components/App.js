@@ -17,8 +17,7 @@ class App extends Component {
           <h1>TableTop</h1>
           <h1>games for geeks</h1>
 
-            <NavLink to='/strategy' className="playButton">Let's Play</NavLink>
-            {/* <Navigation /> */}
+          <NavLink to='/strategy' className="playButton">Let's Play</NavLink>
 
         </div>
       </div>

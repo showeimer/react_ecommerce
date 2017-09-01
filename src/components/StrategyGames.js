@@ -33,12 +33,14 @@ class StrategyGames extends Component {
 
     return (
       <div>
-        <div className="strategyBanner">
-          <h2>Strategy Games</h2>
-          <h2>Sub-Banner</h2>
+        <div className="banner strategyBanner">
+          <h1>Strategy Games</h1>
+          <h1>adventure & roleplay</h1>
         </div>
         <h3 className="productsBanner">Featured Products</h3>
-        {strategy}
+        <section className="products">
+          {strategy}
+        </section>
       </div>
     )
   }

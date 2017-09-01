@@ -33,12 +33,15 @@ class CardGames extends Component {
 
     return (
       <div>
-        <div className="cardBanner">
-          <h2>Card Games</h2>
-          <h2>Sub-Banner</h2>
+        <div className="banner cardBanner">
+          <h1>Card Games</h1>
+          <h1>simple, classic, fun</h1>
         </div>
         <h3 className="productsBanner">Featured Products</h3>
-        {cards}
+
+        <section className="products">
+          {cards}
+        </section>
       </div>
     )
   }

@@ -22,9 +22,6 @@ class BaseLayout extends Component {
 
         {this.props.children}
 
-        {/* <footer>
-          <h6>TableTop Games</h6>
-        </footer> */}
       </div>
     )
   }
