@@ -31,3 +31,5 @@ Create an E-commerce Mock Site.
 ## Results
 
 Mockup in public main directory.
+
+![](homeMobile.png)
